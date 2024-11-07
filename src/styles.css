@@ -1,0 +1,164 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a8c0ff, #f1e5f3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* App Container */
+.App {
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  margin: 20px;
+}
+
+/* General Button Styling */
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* Weather Display Styling */
+.weather-display {
+  background-color: rgba(233, 246, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.weather-display h2 {
+  font-size: 1.8em;
+  color: #2b6db2;
+  margin-bottom: 15px;
+}
+
+.weather-display .current-weather {
+  background: linear-gradient(145deg, #c9eaf3, #e1f0f9);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-display .current-weather div {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.weather-display .current-weather div.temperature {
+  font-size: 1.5em;
+  color: #2196f3;
+  font-weight: bold;
+}
+
+/* 5-Day Forecast Styling */
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.forecast-day {
+  background: linear-gradient(135deg, #e8f7ff, #ffffff);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+  width: 18%;
+  gap: 2rem;
+}
+
+.forecast-day:hover {
+  transform: translateY(-5px);
+}
+
+.forecast-day div.date {
+  font-size: 1em;
+  color: #607d8b;
+  margin-bottom: 8px;
+}
+
+.forecast-day div.temp {
+  font-size: 1.2em;
+  color: #42a5f5;
+  font-weight: bold;
+}
+
+.forecast-day div.description {
+  font-size: 0.9em;
+  color: #78909c;
+  font-style: italic;
+}
+
+/* Favorites Section */
+.favorites {
+  background-color: rgba(233, 246, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.favorites h3 {
+  font-size: 1.2em;
+  color: #3e5b99;
+  margin-bottom: 10px;
+}
+
+.favorites div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.favorites span {
+  cursor: pointer;
+  color: #2196f3;
+  font-weight: 500;
+}
+
+.favorites span:hover {
+  text-decoration: underline;
+}
+
+.favorites button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.favorites button:hover {
+  background-color: #ff3b3b;
+}
